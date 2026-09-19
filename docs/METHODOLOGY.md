@@ -1,9 +1,23 @@
-# Selection methodology · 2026-09-19
+# Literature collection methodology · 2026-09-19
 
-A curated, **non-exhaustive** bibliography, NOT a completed systematic review. Searches combined model names (GAN, WGAN, WGAN-GP, cWGAN-GP, DDPM, diffusion Transformer) with load/consumption/smart meter/synthesis in English and French, reviewing publisher and author listings, arXiv, research portals and repositories. Elicit API access was unavailable for this account. Original publisher DOI or preprint links are preferred. One work = one entry: do not double count earlier arXiv and later journal versions. Date is first confirmed online year where known; record issue/volume differences in status. No copyright PDFs are redistributed.
+This is a **curated and non-exhaustive snapshot, not PRISMA-compliant systematic screening**. Literature search used publisher/DOI pages, preprints, university records, reference lists and code repositories, in English and French queries (with international research regardless of source language). Elicit API access was unavailable. A publisher DOI or original preprint is preferred; **do not copy copyrighted PDFs into this repository**.
 
-**Include:** generation of electricity load, demand or explicit net load, plus benchmark comparisons. **Label adjacent:** appliances/NILM, mixed grid variables, resolution reconstruction. **Exclude from primary:** pure point forecasting, wind/PV-only generation, generic diffusion/GAN work. 
+## Scope and deduplication
 
-DOI and abstracts support bibliographic and high-level model descriptions; exact metrics, native resolution and datasets often require the full text. Mark « à vérifier » if missing. Before treating the catalogue as evidence of novelty, do a forward/backward citation search and read methods for each relevant study. The table is not a performance ranking.
+**Core:** papers empirically generating electricity consumption/load or explicit net-load sequences, or direct benchmark comparisons. **Adjacent:** probabilistic forecast residuals, joint source-load, appliance/NILM, super-resolution and related flow methods — all labelled, not treated as direct substitutes. **Exclude:** pure point forecasting without sampling, solar/wind-only generation and generic method papers. Reviews are separate in [reviews.csv](../catalogue/reviews.csv).
 
-To add a paper, provide original title, translation if applicable, date, DOI/arXiv, model training objective (esp. GP), physical target/unit, benchmark, native resolution, horizon, conditions, metrics, code/data links, and scope.
+Each intellectual work has one record. Prefer a confirmed journal version while recording earlier preprint date in the notes. **Date fields:** year, month (01–12), publication_date (YYYY-MM), date_precision (online versus issue/claimed date). If only year is verified, month and publication_date are blank; order unknown months last within that year. Journal issue month does not establish online-first month automatically. Cite original title in its published language, optionally followed by translation.
+
+## Quality and novelty evidence
+
+Source-verified identifiers do **not automatically verify** every metric, resolution, code artefact, or exact model loss. Explicit “à vérifier” remains where evidence is insufficient. A conditional WGAN with gradient penalty should be tagged cWGAN-GP only when the source establishes both conditions and GP; cluster-specific standalone WGAN-GPs should not be automatically reclassified. Likewise a Transformer generator is not a DiT unless reverse diffusion is implemented.
+
+Track dataset geography, physical target, units, sampling granularity, horizon, conditioning features, evaluation definitions, code/data access and scope. Distinguish *loss Wasserstein used during training* from *Wasserstein evaluated on generated samples*. The 2025 Conv1D-WGAN-GP paper’s quality thresholds are empirical heuristics, not universal normalised standards.
+
+Relevant comparison starting points: [Turowski et al. 2024](https://doi.org/10.1016/j.rser.2024.114842) (169 energy synthesis papers), [Zhang et al. 2025](https://doi.org/10.1016/j.apenergy.2024.125059) (228 deep generative energy applications), [Stenger et al. 2024](https://doi.org/10.1186/s40537-024-00924-7) (83 evaluation measures). Read full texts and use forward/backward citation tracking before any novelty assertion. The catalogue is **not an accuracy ranking**.
+
+## Current state and reproducibility
+
+The catalogue counts 35 original studies (including labelled adjacent examples), plus 11 reviews. The [quality-control comparison](QUALITY_CONTROL_LITERATURE.md) and [GATE-LOCO](GATE_LOCO.md) distinguish published facts from proposed experiments and previously reported notebook observations. GATE-LOCO numerical notes have **not been independently validated against the working notebooks** here.
+
+When contributing a paper: provide stable DOI/preprint, original title, month source and precision, target variable, exact training objective and GP, benchmark, resolution, horizon, conditioning and metrics **with units/definitions**, code/data and direct/adjacent tag. Treat dates of preprints and journal publications separately.
