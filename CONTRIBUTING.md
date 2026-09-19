@@ -1,0 +1,3 @@
+# Contributing / Ajouter un article
+
+Submit a pull request updating catalogue/papers.csv and the corresponding README entry. Include verified year (online vs issue), original title and optional translation, stable DOI/arXiv, family verified from the loss and architecture, task scale, benchmark, sample resolution, horizon, conditioning, evaluation metrics/units, code/data link, and direct/adjacent status. Do not infer GP from the word « Wasserstein », or DiT from the word « Transformer ». Deduplicate preprint and journal versions. Unknown detail = « à vérifier »; no inventing benchmarks or numerical scores. International-language publications are welcome. Do not redistribute publisher PDFs without permission.
