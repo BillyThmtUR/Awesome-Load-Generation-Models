@@ -1,0 +1,15 @@
+query,year,annual,cumulative_since_2020
+time_series,2020,885,885
+spatio_temporal,2020,160,160
+time_series,2021,1072,1957
+spatio_temporal,2021,179,339
+time_series,2022,1217,3174
+spatio_temporal,2022,286,625
+time_series,2023,2242,5416
+spatio_temporal,2023,678,1303
+time_series,2024,3039,8455
+spatio_temporal,2024,1353,2656
+time_series,2025,3857,12312
+spatio_temporal,2025,1693,4349
+time_series,2026,4334,16646
+spatio_temporal,2026,2141,6490
