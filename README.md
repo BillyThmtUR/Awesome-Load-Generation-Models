@@ -1,8 +1,4 @@
-# Awesome Load Generation Models ⚡
-
-> Curated research bibliography of **synthetic electricity consumption / load time-series generation**, including GAN, WGAN, WGAN-GP, conditional WGAN-GP, diffusion, and diffusion Transformers. / Bibliographie scientifique de la génération de charges électriques.
-
-**Updated 2026-09-19. 35 original-paper records and 11 separate review/survey records.** The list is curated, **not exhaustive or PRISMA-compliant**; do not claim an architecture is novel without checking full texts and forward citations. Among original studies, 31 have a checked publication **month** and 4 have only a confirmed year. Missing months are labelled instead of invented. Publication date uses first-established online/issue month with deviations noted; journal/preprint duplicates count once.
+# Awesome Load Generation Models
 
 ## Navigation
 
