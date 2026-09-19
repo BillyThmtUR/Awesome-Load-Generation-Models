@@ -21,7 +21,7 @@ def request(query):
         "search": query,
         "filter": f"from_publication_date:2020-01-01,to_publication_date:{LAST_YEAR}-12-31",
         "group_by": "publication_year",
-        "per-page": "1",
+        "per-page": "100",
     }
     url = BASE + "?" + urllib.parse.urlencode(params)
     headers = {"User-Agent": "AwesomeLoadGenerationModels/1.0 (research reproducibility)"}
@@ -60,6 +60,8 @@ def main():
             records.append({"series": name, "year": year, "annual": annual, "cumulative_since_2020": cumulative})
             print(f"  {year}  annual={annual:6d}  cumulative={cumulative:7d}")
         print(f"  grouped sum={cumulative}; metadata total={total}; match={cumulative==total}")
+        if cumulative != total:
+            raise RuntimeError("Incomplete OpenAlex group_by response: check per_page and pagination")
     with (OUT / "counts.csv").open("w", newline="", encoding="utf-8") as f:
         w=csv.DictWriter(f, fieldnames=list(records[0]))
         w.writeheader()
