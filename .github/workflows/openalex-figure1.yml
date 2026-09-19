@@ -1,0 +1,26 @@
+name: Reproduce OpenAlex Figure 1
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/openalex_figure1.py'
+      - '.github/workflows/openalex-figure1.yml'
+jobs:
+  openalex:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Query live OpenAlex and report yearly and cumulative counts
+        run: python scripts/openalex_figure1.py
+      - name: Save raw bibliographic count outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: openalex-figure1-results
+          path: results/openalex_figure1/
+          if-no-files-found: warn
