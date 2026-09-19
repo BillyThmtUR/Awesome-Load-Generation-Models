@@ -1,0 +1,27 @@
+{
+  "source": "OpenAlex public API",
+  "extracted_at_utc": "2026-09-19T10:45:15Z",
+  "run_url": "https://github.com/BillyThmtUR/Awesome-Load-Generation-Models/actions/runs/35438248111",
+  "script": "scripts/openalex_figure1.py",
+  "search_fields": "OpenAlex default: title, abstract, and indexed fulltext",
+  "start_date": "2020-01-01",
+  "end_date": "2026-12-31",
+  "end_date_caveat": "2026 is in progress; extraction is September 19, 2026, and index metadata can change.",
+  "queries": {
+    "time_series": "\"diffusion model\" AND \"time series\"",
+    "spatio_temporal": "\"diffusion model\" AND \"spatial temporal\""
+  },
+  "api_urls": {
+    "time_series": "https://api.openalex.org/works?search=%22diffusion+model%22+AND+%22time+series%22&filter=from_publication_date%3A2020-01-01%2Cto_publication_date%3A2026-12-31&group_by=publication_year&per-page=100",
+    "spatio_temporal": "https://api.openalex.org/works?search=%22diffusion+model%22+AND+%22spatial+temporal%22&filter=from_publication_date%3A2020-01-01%2Cto_publication_date%3A2026-12-31&group_by=publication_year&per-page=100"
+  },
+  "total_2020_2026": {
+    "time_series": 16646,
+    "spatio_temporal": 6490
+  },
+  "total_2020_2024": {
+    "time_series": 8455,
+    "spatio_temporal": 2656
+  },
+  "comparison": "Not a faithful replication of Yang et al. Fig 1: original database, fields, exact date, and inclusion rules not disclosed; OpenAlex broad fulltext hits are unreviewed."
+}
