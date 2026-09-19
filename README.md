@@ -8,6 +8,7 @@
 - [State-of-the-art and reviews](#state-of-the-art-and-reviews)
 - [Reproducible OpenAlex replication of survey Figure 1](docs/OPENALEX_FIGURE1_REPLICATION.md)
 - [Quality control and GATE-LOCO](#quality-control-and-gate-loco)
+- [Metrics, published numerical results and equation notation](docs/METRICS_RESULTS_NOTATION.md)
 - [Datasets and contributions](#datasets-and-contributions)
 
 ## All studies, newest → oldest
