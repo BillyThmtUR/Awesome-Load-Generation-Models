@@ -6,6 +6,7 @@
 - [WGAN-GP vs cWGAN-GP: verified prior art](#wgan-gp-vs-cwgan-gp-verified-prior-art)
 - [Browse by model family](#browse-by-model-family)
 - [State-of-the-art and reviews](#state-of-the-art-and-reviews)
+- [Reproducible OpenAlex replication of survey Figure 1](docs/OPENALEX_FIGURE1_REPLICATION.md)
 - [Quality control and GATE-LOCO](#quality-control-and-gate-loco)
 - [Datasets and contributions](#datasets-and-contributions)
 
