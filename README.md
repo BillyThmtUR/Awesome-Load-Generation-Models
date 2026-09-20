@@ -17,7 +17,7 @@
 
 | Date | Model / paper | Family | Benchmark / dataset | Resolution; horizon | Article / code |
 |---|---|---|---|---|---|
-| September 2026 | **LoaDiff** — LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics<br><sub>Direct; arXiv Sep 2026</sub> | Diffusion conditionnelle | 3 jeux résidentiels | infra-horaire; annuel | [Paper](https://arxiv.org/abs/2609.11639) |
+| September 2026 | **LoaDiff** — LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics<br><sub>Direct; arXiv Sep 2026</sub> | Diffusion conditionnelle | 3 jeux résidentiels | infra-horaire; annuel | [Paper](https://arxiv.org/abs/2609.11639) · [Code](https://github.com/adrienpetralia/loadiff) |
 | August 2026 | **Seasonal weekly WGAN-GP** — Synthetic Seasonal Weekly Load Profile Generation Based on Advanced Wasserstein-Distance Generative Adversarial Networks<br><sub>Direct; Energies Aug 2026</sub> | WGAN-GP | Irish residential | à vérifier; semaine saisonnière | [Paper](https://doi.org/10.3390/en19153651) |
 | July 2026 | **Temporally-Conditioned DiT** — Temporally-Conditioned Diffusion Transformer for Appliance-Level Load Synthesis in Non-Intrusive Load Monitoring<br><sub>Adjacent appareil/NILM; SSRN Jul 2026</sub> | Diffusion Transformer | Appliances; à vérifier | à vérifier; séquences appareils | [Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7124192) |
 | June 2026 | **AC-WTGAN+** — AC-WTGAN+: A conditional Wasserstein temporal generator for high-quality residential load synthesis<br><sub>Direct; Electric Power Systems Research Jun 2026</sub> | cWGAN-GP | Irish CER | 30 min; 336 pas / semaine | [Paper](https://doi.org/10.1016/j.epsr.2026.113338) |
@@ -34,6 +34,7 @@
 | 2025 (month unverified) | **SocioDiff** — SocioDiff: A Socio-Aware Diffusion Model for Residential Electricity Consumption Data Generation<br><sub>Direct; IEEE TSG 2025</sub> | Diffusion conditionnelle | Irish CER | 30 min; 336 pas / semaine | [Paper](https://doi.org/10.1109/TSG.2025.3575819) · [Code/data](https://github.com/Intelligame/SocialDiff) |
 | November 2024 | **Source-load cWGAN-GP** — Source-load scenario generation method based on conditional Wasserstein generative adversarial network with gradient penalty<br><sub>Adjacent mixed source+load; EI2 2024 November; direct load-only evaluation not established</sub> | cWGAN-GP (source-load) | Mixed electricity source and load; setup not verified | à vérifier; scénarios | [Paper](https://doi.org/10.1109/EI264398.2024.10991846) |
 | October 2024 | **ERGAN** — Synthetic Data Generation for Residential Load Patterns via Recurrent GAN and Ensemble Method<br><sub>Direct; IEEE TIM Oct 2024; données synthétiques</sub> | GAN récurrent | Pecan Street 417 foyers | 1 h; journée | [Paper](https://doi.org/10.1109/TIM.2024.3480225) · [Code/data](https://github.com/AdamLiang42/ERGAN-Dataset) |
+| July 2024 | **DiffCharge** — DiffCharge: Generating EV Charging Scenarios via a Denoising Diffusion Model<br><sub>Adjacent EV charging; IEEE TSG 15(4), 3936–3949; July 2024</sub> | Diffusion conditionnelle | ACN-Data; sessions VE, profils batterie/station | à vérifier; séances de recharge / profils de station | [Paper](https://doi.org/10.1109/TSG.2024.3360874) · [Code](https://github.com/LSY-Cython/DiffCharge) |
 | June 2024 | **Building metadata diffusion** — Creating synthetic energy meter data using conditional diffusion and building metadata<br><sub>Direct; Energy and Buildings Jun 2024</sub> | Diffusion conditionnelle | 1828 compteurs multi-pays | à vérifier; annuel | [Paper](https://doi.org/10.1016/j.enbuild.2024.114216) |
 | June 2024 | **GAN/WGAN/WGAN-GP benchmark** — Comparative assessment of generative models for transformer- and consumer-level load profiles generation<br><sub>Direct benchmark; SEGAN Jun 2024</sub> | Benchmark | Client et transformateur | 15; 30; 60 min; à vérifier | [Paper](https://doi.org/10.1016/j.segan.2024.101338) |
 | April 2024 | **DGAN + wavelets** — Capturing multiscale temporal dynamics in synthetic residential load profiles through Generative Adversarial Networks (GANs)<br><sub>Direct; Applied Energy Apr 2024</sub> | GAN | Résidentiel (confidentiel) | haute fréquence; annuel puis intrajournalier | [Paper](https://doi.org/10.1016/j.apenergy.2024.122831) |
@@ -105,13 +106,14 @@
 
 ### Diffusion and diffusion Transformer
 
-- **September 2026 · LoaDiff** — [LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics](https://arxiv.org/abs/2609.11639).
+- **September 2026 · LoaDiff** — [LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics](https://arxiv.org/abs/2609.11639) · [Code](https://github.com/adrienpetralia/loadiff).
 - **July 2026 · Temporally-Conditioned DiT** — [Temporally-Conditioned Diffusion Transformer for Appliance-Level Load Synthesis in Non-Intrusive Load Monitoring](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7124192) *(adjacent task)*.
 - **June 2026 · LV conditional diffusion** — [Coherent load profile synthesis with conditional diffusion for LV distribution network scenario generation](https://doi.org/10.1016/j.segan.2026.102264).
 - **January 2026 · Interpretable diffusion + Transformer** — [Long-term scenario generation for distribution network loads based on interpretable diffusion models](https://doi.org/10.1016/j.ijepes.2025.111491).
 - **June 2025 · EnergyDiff** — [EnergyDiff: Universal Time-Series Energy Data Generation Using Diffusion Models](https://doi.org/10.1109/TSG.2025.3581472).
 - **2025 (month unverified) · Physics-informed diffusion** — [Generating Synthetic Net Load Data for Residential Customers With Physics-Informed Diffusion Models](https://doi.org/10.1109/TSG.2025.3625925).
 - **2025 (month unverified) · SocioDiff** — [SocioDiff: A Socio-Aware Diffusion Model for Residential Electricity Consumption Data Generation](https://doi.org/10.1109/TSG.2025.3575819).
+- **July 2024 · DiffCharge** — [DiffCharge: Generating EV Charging Scenarios via a Denoising Diffusion Model](https://doi.org/10.1109/TSG.2024.3360874) · [Code](https://github.com/LSY-Cython/DiffCharge) *(adjacent: recharge de véhicules électriques, profils batterie et station)*.
 - **June 2024 · Building metadata diffusion** — [Creating synthetic energy meter data using conditional diffusion and building metadata](https://doi.org/10.1016/j.enbuild.2024.114216).
 - **February 2024 · Customized load diffusion** — [Customized Load Profiles Synthesis for Electricity Customers Based on Conditional Diffusion Models](https://doi.org/10.1109/TSG.2024.3366212).
 
@@ -147,6 +149,8 @@ There **is** published load generation quality control (e.g., Baasch 2021, Xia 2
 | ERGAN synthetic profiles | [ERGAN Dataset](https://github.com/AdamLiang42/ERGAN-Dataset) |
 | MODERATE annual household generator | [Source](https://github.com/MODERATE-Project/Synthetic-Load-Profiles) |
 | Conditional diffusion for LV substations | [Source](https://github.com/strath-ai/lv-synthesis-diffusion) |
+| LoaDiff conditional electricity-load generation | [Source](https://github.com/adrienpetralia/loadiff) |
+| DiffCharge EV charging scenarios | [Source](https://github.com/LSY-Cython/DiffCharge) |
 
 Contributions welcome in all source languages: preserve the original title and add English translation if relevant. See [CONTRIBUTING.md](CONTRIBUTING.md) and [methodology](docs/METHODOLOGY.md). Forecast-only papers without genuine synthetic sampling and exclusively renewable-output papers are excluded from the primary list. See [adjacent methodologies](docs/ADJACENT_METHODS.md). Publication months require source confirmation; no guessed months, cross-paper raw score rankings or pirated PDFs.
 
