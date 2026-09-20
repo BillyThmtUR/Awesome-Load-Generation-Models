@@ -1,7 +1,0 @@
-# Contributing / Ajouter un article
-
-Please update the [original-study CSV](catalogue/papers.csv) and its corresponding dated README entry, or add a review to [reviews.csv](catalogue/reviews.csv) and [REVIEWS.md](docs/REVIEWS.md). Each contribution should specify the **original-language paper title**, optional English translation, year AND **verified month** (blank when unknown), source of date and its precision (first-online versus journal issue), DOI/arXiv, exact model family (document if GP and conditioning coexist), electricity target (load, net-load, residual or source-load), dataset and region, native sample resolution, horizon, condition features, evaluation metrics and definitions, code/data availability, and task scope.
-
-Do not invent unknown months, interpret WGAN as necessarily WGAN-GP, relabel a cluster-specific WGAN-GP as cWGAN-GP, or treat an autoregressive Transformer as a diffusion Transformer. Do not double-count a preprint and its eventual journal paper. A stated benchmark **dataset** is not a benchmark **score**. No cross-paper rankings without identical scale, split and metric implementation.
-
-Document missing or unverified fields explicitly. For QA-related suggestions compare with [prior art](docs/QUALITY_CONTROL_LITERATURE.md); for this thesis's conditioning methodology distinguish [GATE-LOCO proposed tests](docs/GATE_LOCO.md) from verified experimental results. Do not upload copyrighted publisher PDFs or private raw meter data.
